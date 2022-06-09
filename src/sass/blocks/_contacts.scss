@@ -1,0 +1,102 @@
+.contacts {
+   padding: 60px 35px 90px 50px;
+   &__wrapper {
+      padding: 0 35px 0 50px;
+      display: grid;
+      grid-template:600px /400px 585px;
+      justify-content: space-between;
+   }
+
+   &__photo img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   &__info{
+      padding-top: 5px;
+   }
+
+   &__title {
+      position: relative;
+      @include before_circle;
+      padding-left: 12px;
+   }
+   &__divider.divider{
+      margin:0;
+   }
+
+   &__text {
+      font-weight: 700;
+      font-size: 14px;
+      margin: 20px 0;
+   }
+   &__link img{
+      margin-right: 15px;
+      height: 30px;
+      width: 30px;
+      // max-height: 30px;
+      // max-width: 30px;
+      &:hover{
+         transform: scale(1.1);
+      }
+   }
+   &__form{
+      display: grid;
+      row-gap: 34px;
+      column-gap: 25px;
+      grid-template: 45px 190px 45px / repeat(2, 280px);
+      label {
+         position: absolute;
+         font-size: 12px;
+         top: -9px;
+         left: 12px;
+         background: #fff;
+         padding: 0 8px;
+      }
+   }
+   &__input {
+      position: relative;
+      input{
+         width: 100%;
+         height: 100%;
+         font-size: 12px;
+         padding: 20px 12px;
+      }
+   }
+   
+   &__textarea{
+      grid-column: 1/3;
+      position: relative;
+      textarea{
+         width: 100%;
+         height: 100%;
+         resize: none;
+         padding: 20px;
+      } 
+   }
+   &__triggers{
+      grid-column: 1 / 3;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      column-gap: 35px;
+      span{
+         font-size: 12px;
+      }
+      a{
+         font-size: 12px;
+      }
+      input{
+         margin-right: 10px;
+      }
+   }
+   &__privacy{
+      display: flex;
+      align-items: center;
+   }
+   &__btn{
+      border: none;
+      font-weight: 700;
+      font-size: 14px;
+   }
+   
+}

@@ -1,0 +1,33 @@
+@mixin before_circle {
+   &::before{
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: -25%;
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      background:$main-color; 
+      z-index: -1;
+   }
+}
+@mixin before_circle-center {
+   &::before{
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      background:$main-color; 
+      z-index: -1;
+   }
+}
+
+@mixin yelow_line {
+   width: 60px;
+   height: 3px;
+   background-color:$main-color;
+}

@@ -1,0 +1,37 @@
+.counter {
+
+   &__wrapper {
+      padding: 120px 0;
+      display: grid;
+      grid-template: repeat(2, 60px)/repeat(3, 1fr);
+      column-gap: 45px;
+      row-gap: 30px;
+   }
+
+   &__item {
+      display: grid;
+      grid-template: 21px 14px/200px 35px;
+      justify-content: space-between;
+      align-content: space-between;
+   }
+
+   &__title {
+      position: relative;
+      padding-left: 12px;
+      @include before_circle;
+   }
+
+   &__line {
+      width: 350px;
+      height: 14px;
+      background: #E8E4DE;
+      border-radius: 4px;
+      span {
+         display: block;
+         background-color: $main-color;
+         height: 14px;
+         width: 75%;
+         border-radius: 4px;
+      }
+   }
+}
